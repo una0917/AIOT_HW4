@@ -1,12 +1,14 @@
-🐦 AIOT HW4 – 八哥影像辨識系統（Myna Classification）
-📌 專案簡介
+# 🐦 AIOT HW4 – 八哥影像辨識系統（Myna Classification）
+
+## 📌 專案簡介
 
 本專案為 AIoT 課程作業 HW4，目標是利用 深度學習影像分類技術，建立一個可透過網頁操作的八哥（Myna）辨識系統。
 使用者只需上傳一張八哥照片，系統即可自動判斷該影像屬於哪一種八哥，並以 機率數值與視覺化圖表 顯示辨識結果。
 
 本系統採用 Transfer Learning 架構，以 ResNet50V2 作為特徵擷取模型，並結合 Data Augmentation 技術，在有限資料下提升模型泛化能力。最終透過 Streamlit 建立互動式 Web 介面，並部署至 Streamlit Cloud，使所有使用者皆可直接在線上體驗。
 
-🚀 Demo（線上展示）
+
+## 🚀 Demo（線上展示）
 
 👉 Streamlit Cloud Demo
 🔗 https://aiothw4-xsd8wb6ecw6clxpp5jz8ki.streamlit.app/
@@ -19,7 +21,8 @@
 
 系統即顯示三種類型八哥的預測機率與最終辨識結果
 
-🐤 辨識類別
+
+## 🐤 辨識類別
 
 本專案辨識三種台灣常見的八哥：
 
@@ -27,7 +30,8 @@
 crested_myna	土八哥
 javan_myna	白尾八哥
 common_myna	家八哥
-🧠 系統方法說明
+
+### 🧠 系統方法說明
 1️⃣ 模型架構
 
 Backbone：ResNet50V2（ImageNet 預訓練權重）
@@ -72,7 +76,7 @@ Backbone：ResNet50V2（ImageNet 預訓練權重）
 
 最可能的八哥種類（Highest Probability）
 
-📁 專案目錄結構
+### 📁 專案目錄結構
 AIOT_HW4/
 │
 ├─ main.py                  # 模型訓練程式（含 Data Augmentation）
@@ -87,7 +91,7 @@ AIOT_HW4/
 │
 └─ myna_model.h5            # 訓練完成後的模型檔
 
-🔧 執行方式（本地端）
+### 🔧 執行方式（本地端）
 1️⃣ 安裝套件
 pip install -r requirements.txt
 
@@ -97,11 +101,11 @@ python main.py
 3️⃣ 啟動 Web App
 streamlit run app.py
 
-✨ 與參考資料相比的改進與新增內容
+## ✨ 與參考資料相比的改進與新增內容
 
 本專案以以下教學作為基礎進行延伸與改進：
 
-📚 參考資料
+### 📚 參考資料
 https://github.com/yenlung/AI-Demo
 
 在原始範例的基礎上，本專案新增與改進了以下功能：
@@ -140,7 +144,8 @@ Streamlit Web 介面
 
 使所有使用者可直接線上體驗
 
-📌 使用技術
+
+## 📌 使用技術
 
 Python
 
@@ -151,11 +156,3 @@ ResNet50V2
 Streamlit
 
 NumPy / Pillow / SciPy
-
-👩‍🎓 作者
-
-課程：AIoT
-
-作業：HW4
-
-作者：Una
