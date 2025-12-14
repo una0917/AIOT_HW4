@@ -84,7 +84,8 @@ AIOT_HW4/
 │   └─ common_myna/
 │
 └─ myna_model.h5            # 訓練完成後的模型檔
-
+'''
+---
 
 ## 🔧 執行方式（本地端）
 1️⃣ 安裝套件
@@ -95,6 +96,8 @@ python main.py
 
 3️⃣ 啟動 Web App
 streamlit run app.py
+
+---
 
 ## ✨ 與參考資料相比的改進與新增內容
 
@@ -122,6 +125,7 @@ Streamlit Web 介面
 將專案部署至 Streamlit Cloud
 使所有使用者可直接線上體驗
 
+---
 
 ## 📌 使用技術
 
