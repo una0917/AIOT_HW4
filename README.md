@@ -107,22 +107,39 @@ streamlit run app.py
 https://github.com/yenlung/AI-Demo
 
 在原始範例的基礎上，本專案新增與改進了以下功能：
+
 專案模組化
+
 將訓練 (main.py) 與推論介面 (app.py) 分離
+
 符合實務專案結構
+
 資料切分（Training / Validation）
+
 原始範例使用所有資料進行訓練
+
 本專案加入 Validation Split 以評估模型泛化能力
+
 Data Augmentation
+
 加入影像隨機變換，提高模型對資料不足情況的適應性
+
 模型保存與重複使用
+
 訓練完成後將模型儲存為 .h5
+
 推論階段直接載入模型，避免重複訓練
+
 Streamlit Web 介面
+
 取代原始 Gradio 範例
+
 提供更直覺的 UI 與圖表視覺化
+
 雲端部署
+
 將專案部署至 Streamlit Cloud
+
 使所有使用者可直接線上體驗
 
 ---
@@ -130,7 +147,12 @@ Streamlit Web 介面
 ## 📌 使用技術
 
 Python
+
 TensorFlow / Keras
+
 ResNet50V2
+
 Streamlit
+
 NumPy / Pillow / SciPy
+
